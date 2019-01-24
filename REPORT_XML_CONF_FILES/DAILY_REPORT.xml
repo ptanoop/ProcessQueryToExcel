@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE xml>
+<BorderControlReportQuery>
+	<SingleResultQuery>
+		<cell>CH2</cell>
+		<query></query>
+		<resultType>Number</resultType>
+		<sourceType></sourceType>
+		<source></source>
+		<action>FILL_DATE</action>
+		<parameters></parameters>
+		<description>
+			Date on KPI is running
+		</description>
+	</SingleResultQuery>	
+	<SingleResultQuery>
+		<cell>CH3</cell>
+		<query></query>
+		<resultType>String</resultType>
+		<sourceType></sourceType>
+		<source></source>
+		<action>FILL_DESCRIPTION</action>
+		<parameters></parameters>
+		<description>
+			SHIFT
+		</description>
+	</SingleResultQuery>
+	<SingleResultQuery>
+		<cell>CI3</cell>
+		<query></query>
+		<resultType>String</resultType>
+		<sourceType></sourceType>
+		<source></source>
+		<action>FILL_DESCRIPTION</action>
+		<parameters></parameters>
+		<description>
+			USERS
+		</description>
+	</SingleResultQuery>
+	<SingleResultQuery>
+		<cell>CJ3</cell>
+		<query></query>
+		<resultType>String</resultType>
+		<sourceType></sourceType>
+		<source></source>
+		<action>FILL_DESCRIPTION</action>
+		<parameters></parameters>
+		<description>
+			Pax Emigrated
+		</description>
+	</SingleResultQuery>	
+	<MultiResultQuery>
+		<startCell>CH4</startCell>
+		<endCell>CJ155</endCell>
+		<queryResultColumnNames>SHIFT,USER_NAME,COUNT</queryResultColumnNames>
+		<queryResultColumnTypes>String,String,Number</queryResultColumnTypes>
+		<query>
+			<![CDATA[ 
+					SELECT SHIFT, USERNAME, COUNT FROM DUAL
+				]]>
+		</query>
+		<sourceType>DATABASE</sourceType>
+		<source>NGX</source>
+		<description>List of users per shift</description>
+	</MultiResultQuery>
+</BorderControlReportQuery>
+
+	

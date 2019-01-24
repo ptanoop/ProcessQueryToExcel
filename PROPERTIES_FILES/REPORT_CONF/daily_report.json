@@ -1,0 +1,16 @@
+{
+	"reportName" 	: 	"DAILY_REPORT_V1.0",
+	"reportSheets"	:	[
+							{
+								"reportQueries"   : "DAILY_REPORT.xml",
+								"sheetName"		    :	"Daily KPIs",
+								"startCell"		    :	"D2",
+								"endCell"		      :	"AF42",
+								"columnShift"	    :	1
+							}
+						],
+	"mailOptions"	: 	{
+							"mailSubject"		:	"Daily Report",
+							"mailRecepients"	:	[ "anoop.emaratech@gmail.com" ]
+						}
+}
